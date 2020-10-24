@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="Survey Registration form"/>
+    <meta name="keywords" content="education survey , survey form,form survey"/>
+    <meta name="author" content="Vidyadhar Baratam"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <title>Survey form</title>
+</head>
+<body>
+      <header>
+          <div>
+            <p>Survey For Current Education</p>
+          </div>
+      </header>
+      <form class="wrapper" action="gather.php" method="post">
+          <div class="title">
+              Registration Form
+          </div>
+          <div class="form">
+              <div class="inputfield">
+                  <label for="fn">First Name</label>
+                  <input type="text" class="input" id="fn" name="fname" required/>
+              </div>
+              <div class="inputfield">
+                  <label for="ln">Last Name</label>
+                  <input type="text" class="input" id="ln" name="lname" required/>
+              </div>
+              <div class="inputfield">
+                  <label for="gn">Gender</label>
+                  <div class="custom_select">
+                      <select id="gn" name="gender">
+                          <option value="">Select</option>
+                          <option value="male">Male</option>
+                          <option value="female">Female</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="inputfield">
+                  <label for="em">Email Address</label>
+                  <input type="text" class="input" id="em" name="email" pattern="^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$" required/>
+              </div>
+              <div class="inputfield">
+                  <label for="pn">Phone Number</label>
+                  <input type="text" class="input" id="pn" name="phone" pattern="\d{10}" required/>
+              </div>
+              <div class="inputfield">
+                  <label for="tm">Time</label>
+                  <input type="time" class="input" id="tm" name="tim" pattern="[0-9]{2}:[0-9]{2}" required/>
+              </div>
+              <div class="inputfield">
+                  <label for="dt">Date</label>
+                  <input type="date" class="input" id="dt" name="dat" pattern="\d{4}-\d{2}-\d{2}" required/>
+              </div>
+              <div class="inputfield terms">
+                  <label for="cb" class="check">
+                      <input type="checkbox" id="cb" name="checked" required/>
+                      <span class="checkmark"></span>
+                  </label>
+                  <p>Agreed to terms and conditions</p>
+              </div>
+              <div class="inputfield">
+                  <input type="submit" value="Register" class="btn">
+              </div>
+          </div>
+      </form>
+       <footer>
+           <div class="footer-wrap">
+               <p>&#169;Vidyadhar Baratam</p>
+               <p><i class="fa fa-linkedin-square">  <a style="color: black" href="https://www.linkedin.com/in/vidyadhar-vijju" target="_blank">Vidyadhar Baratam</a></i></p>
+               <p>Developer</p>
+           </div>
+       </footer>
+</body>
+</html>
